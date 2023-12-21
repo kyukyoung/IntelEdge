@@ -3,7 +3,8 @@
 
 VS설치
 
-readme.md: 폴더에 대한 설명 적는다. 마크다운 사용법 검색해서 참고.
+readme.md: 폴더에 대한 설명 적는다. 마크다운 사용법 검색해서 참고. 
+https://gist.github.com/ihoneymon/652be052a0727ad59601
 
 캡처도구: window + shift + t
 
