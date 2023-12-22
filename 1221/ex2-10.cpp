@@ -1,19 +1,23 @@
-#include <iostream>
-#include <cstring>
-using namespace std;
+#include <iostream>		//입출력 함수 사용
+//#include <cstring>	//strcmp() 사용
+#include <string>       //string getline() 사용
+using namespace std;	//std:: 안적으려고 namespace선언
 
 int main() {
-	char name[100];
-	char Nbuf[5][100];
-	cout << "5명의 이름을 ';'으로 구분하여 입력하세요.\n>> ";
-	cin.getline(name, 100, ';');
-	for (int i = 0; i < 5; i++) {
-		for (int j = 0; j < 100; j++){
-			if (strcmp(name, ";") == 0) {
-				cout << i + 1 << " : " << Nbuf[i] << "\n";
-				break;
-			}
-			else Nbuf[i][j] = name[j];
-		}
-	}
+    const int numNames = 5;
+    string names[numNames];
+    string longestName;
+    int maxLength = 0;
+
+    cout << "5명의 이름을 ';'로 구분하여 입력해주세요:\n>> ";
+    for (int i = 0; i < numNames; i++) {
+        getline(cin, names[i], ';');
+        cout << "이름: " << names[i] << endl;
+        if (names[i].length() > maxLength) {
+            maxLength = names[i].length();
+            longestName = names[i];
+        }
+    }
+    cout << "가장 긴 이름: " << longestName << endl;
+    return 0;
 }
