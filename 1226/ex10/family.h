@@ -38,4 +38,4 @@ private:
 	string name;	
 	int size;		//Person 배열 크기. 가족 구성원 수
 };
-#endif // !family.h
+//#endif // !family.h
