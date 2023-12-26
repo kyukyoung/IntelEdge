@@ -1,5 +1,6 @@
 #pragma once
-#ifndef family.h
+//#ifndef FAMILY_H_
+//#define FAMILY_H_
 #include <iostream>
 #include <cstring>
 using namespace std;
@@ -17,24 +18,24 @@ private:
 
 class Family {
 public:
-	Family(string name, int size){ //size °³¼ö ¸¸Å­ Person ¹è¿­ µ¿Àû»ı¼º
+	Family(string name, int size){ //size ê°œìˆ˜ ë§Œí¼ Person ë°°ì—´ ë™ì ìƒì„±
 		this->name = name;
 		this->size = size;
 		p = new Person[size];
 	}
 	~Family() { delete[]p; }
-	void setName(int n, string name) { //Person °´Ã¼ ¹è¿­ ÀÔ·Â
+	void setName(int n, string name) { //Person ê°ì²´ ë°°ì—´ ì…ë ¥
 		p[n].inputName(name);
 	}
-	void show() { //¸ğµç °¡Á· ±¸¼º¿ø Ãâ·Â
-		cout << this->name << "°¡Á·Àº ´ÙÀ½°ú °°ÀÌ " << this->size << "¸í ÀÔ´Ï´Ù." << endl;
+	void show() { //ëª¨ë“  ê°€ì¡± êµ¬ì„±ì› ì¶œë ¥
+		cout << this->name << "ê°€ì¡±ì€ ë‹¤ìŒê³¼ ê°™ì´ " << this->size << "ëª… ì…ë‹ˆë‹¤." << endl;
 		for (int i = 0; i < this->size; i++) {
 			cout << p[i].printName() << "\t";
 		}
 	}
 private:
-	Person* p;		//Person ¹è¿­ Æ÷ÀÎÅÍ
+	Person* p;		//Person ë°°ì—´ í¬ì¸í„°
 	string name;	
-	int size;		//Person ¹è¿­ Å©±â. °¡Á· ±¸¼º¿ø ¼ö
+	int size;		//Person ë°°ì—´ í¬ê¸°. ê°€ì¡± êµ¬ì„±ì› ìˆ˜
 };
 #endif // !family.h
