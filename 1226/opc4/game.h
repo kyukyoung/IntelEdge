@@ -1,12 +1,10 @@
 #pragma once
-#ifndef GAME.H
-
 #include <iostream>
 #include <cstring>
 using namespace std;
 
 class WordGame
-{//³¡¸»ÀÕ±â °ÔÀÓ ÀüÃ¼¸¦ ¿î¿µÇÏ´Â Å¬·¡½º
+{//ëë§ì‡ê¸° ê²Œì„ ì „ì²´ë¥¼ ìš´ì˜í•˜ëŠ” í´ë˜ìŠ¤
 public:
 	WordGame();
 	~WordGame();
@@ -17,7 +15,7 @@ private:
 
 
 class Player
-{//¼±¼ö¸¦ Ç¥ÇöÇÏ´Â Å¬·¡½º
+{//ì„ ìˆ˜ë¥¼ í‘œí˜„í•˜ëŠ” í´ë˜ìŠ¤
 public:
 	Player();
 	~Player();
