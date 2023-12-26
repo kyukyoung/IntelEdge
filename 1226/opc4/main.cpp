@@ -3,23 +3,23 @@
 #include "game.h"
 using namespace std;
 
-int main() {//WordGame °´Ã¼¸¦ »ı¼ºÇÏ°í °ÔÀÓÀ» ½ÃÀÛÇÏ´Â ÇÔ¼ö
+int main() {//WordGame ê°ì²´ë¥¼ ìƒì„±í•˜ê³  ê²Œì„ì„ ì‹œì‘í•˜ëŠ” í•¨ìˆ˜
 	
-	cout << "³¡¸» ÀÕ±â °ÔÀÓÀ» ½ÃÀÛÇÕ´Ï´Ù" << endl;
-	cout << "°ÔÀÓ¿¡ Âü°¡ÇÏ´Â ÀÎ¿øÀº ¸î ¸í ÀÔ´Ï±î? ";
+	cout << "ëë§ ì‡ê¸° ê²Œì„ì„ ì‹œì‘í•©ë‹ˆë‹¤" << endl;
+	cout << "ê²Œì„ì— ì°¸ê°€í•˜ëŠ” ì¸ì›ì€ ëª‡ ëª… ì…ë‹ˆê¹Œ? ";
 	int n;
 	cin >> n;
 	Player* pName = new Player[n];
-	if (!pName) {//Èü °¡µæ Â÷¼­ ¸Ş¸ğ¸® µ¿ÀÛÇÒ´ç ºÒ°¡ÇÒ ¶§
-		cout << "¸Ş¸ğ¸®¸¦ ÇÒ´çÇÒ ¼ö ¾ø½À´Ï´Ù." << endl;
+	if (!pName) {//í™ ê°€ë“ ì°¨ì„œ ë©”ëª¨ë¦¬ ë™ì‘í• ë‹¹ ë¶ˆê°€í•  ë•Œ
+		cout << "ë©”ëª¨ë¦¬ë¥¼ í• ë‹¹í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤." << endl;
 		return 0;
 	}
 	for (int i = 0; i < n; i++)
 	{
-		cout << "Âü°¡ÀÚÀÇ ÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä.(ºóÄ­ ¾øÀÌ) >> ";
+		cout << "ì°¸ê°€ìì˜ ì´ë¦„ì„ ì…ë ¥í•˜ì„¸ìš”.(ë¹ˆì¹¸ ì—†ì´) >> ";
 		pName[i].addPlayer();
 	}
-	cout << "½ÃÀÛÇÏ´Â ´Ü¾î´Â ¾Æ¹öÁöÀÔ´Ï´Ù" << endl;
+	cout << "ì‹œì‘í•˜ëŠ” ë‹¨ì–´ëŠ” ì•„ë²„ì§€ì…ë‹ˆë‹¤" << endl;
 	int res, i=0;
 	string str;
 	WordGame* pGame = new WordGame;
@@ -28,12 +28,13 @@ int main() {//WordGame °´Ã¼¸¦ »ı¼ºÇÏ°í °ÔÀÓÀ» ½ÃÀÛÇÏ´Â ÇÔ¼ö
 		cin >> str;
 		res = pGame->compareWord(str);
 		if (res) {
-			cout << "³¡¸» ÀÕ±â ½ÇÆĞ!" << endl;
+			cout << "ëë§ ì‡ê¸° ì‹¤íŒ¨!" << endl;
 			break;
 		}
 		i++;
 		if (i == n) i = 0;
 	}
+	delete[]pGame;
 	delete[]pName;
 	return 0;
 }
