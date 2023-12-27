@@ -1,0 +1,33 @@
+﻿  MyIntStack.cpp
+C:\Users\user\Desktop\prac5\prac5\5-8\MyIntStack.cpp(37,13): error C2511: 'MyIntStack::MyIntStack(MyIntStack &)': 오버로드된 멤버 함수가 'MyIntStack'에 없습니다.
+  C:\Users\user\Desktop\prac5\prac5\5-8\MyIntStack.cpp(4,7):
+  'MyIntStack' 선언을 참조하십시오.
+  
+C:\Users\user\Desktop\prac5\prac5\5-8\MyIntStack.cpp(38,2): error C2597: 비정적 멤버 'MyIntStack::size'에 대한 참조가 잘못되었습니다.
+  C:\Users\user\Desktop\prac5\prac5\5-8\MyIntStack.cpp(6,6):
+  'MyIntStack::size' 선언을 참조하십시오.
+  
+C:\Users\user\Desktop\prac5\prac5\5-8\MyIntStack.cpp(39,2): error C2597: 비정적 멤버 'MyIntStack::tos'에 대한 참조가 잘못되었습니다.
+  C:\Users\user\Desktop\prac5\prac5\5-8\MyIntStack.cpp(7,6):
+  'MyIntStack::tos' 선언을 참조하십시오.
+  
+C:\Users\user\Desktop\prac5\prac5\5-8\MyIntStack.cpp(40,15): error C2597: 비정적 멤버 'MyIntStack::size'에 대한 참조가 잘못되었습니다.
+  C:\Users\user\Desktop\prac5\prac5\5-8\MyIntStack.cpp(6,6):
+  'MyIntStack::size' 선언을 참조하십시오.
+  
+C:\Users\user\Desktop\prac5\prac5\5-8\MyIntStack.cpp(40,2): error C2597: 비정적 멤버 'MyIntStack::p'에 대한 참조가 잘못되었습니다.
+  C:\Users\user\Desktop\prac5\prac5\5-8\MyIntStack.cpp(5,7):
+  'MyIntStack::p' 선언을 참조하십시오.
+  
+C:\Users\user\Desktop\prac5\prac5\5-8\MyIntStack.cpp(41,17): error C2597: 비정적 멤버 'MyIntStack::size'에 대한 참조가 잘못되었습니다.
+  C:\Users\user\Desktop\prac5\prac5\5-8\MyIntStack.cpp(41,17):
+  'MyIntStack::size' 선언을 참조하십시오.
+  
+C:\Users\user\Desktop\prac5\prac5\5-8\MyIntStack.cpp(41,17): error C3867: 'MyIntStack::size': 비표준 구문입니다. '&'를 사용하여 멤버 포인터를 만드세요.
+C:\Users\user\Desktop\prac5\prac5\5-8\MyIntStack.cpp(41,17): error C2568: '<': 함수 오버로드를 확인할 수 없습니다.
+C:\Users\user\Desktop\prac5\prac5\5-8\MyIntStack.cpp(42,3): error C2597: 비정적 멤버 'MyIntStack::p'에 대한 참조가 잘못되었습니다.
+  C:\Users\user\Desktop\prac5\prac5\5-8\MyIntStack.cpp(42,3):
+  'MyIntStack::p' 선언을 참조하십시오.
+  
+C:\Users\user\Desktop\prac5\prac5\5-8\MyIntStack.cpp(42,3): error C3867: 'MyIntStack::p': 비표준 구문입니다. '&'를 사용하여 멤버 포인터를 만드세요.
+C:\Users\user\Desktop\prac5\prac5\5-8\MyIntStack.cpp(42,3): error C2568: '[': 함수 오버로드를 확인할 수 없습니다.
